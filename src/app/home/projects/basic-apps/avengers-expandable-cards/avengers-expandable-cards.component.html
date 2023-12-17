@@ -1,0 +1,14 @@
+<div class="card app-body main-box">
+  <p class="help">Click On any Image to Expand</p>
+  <div class="box">
+    <div
+      *ngFor="let panel of panels; let i = index"
+      class="panel"
+      [class.active]="i === activePanel"
+      [style.backgroundImage]="'url(' + panel.image + ')'"
+      (click)="setActivePanel(i)"
+    >
+      <h3>{{ panel.title }}</h3>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+.homepage {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.home-content {
+  height: 100%;
+  margin-top: 8%;
+}
+
+.bg-home {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-home:hover {
+  transform: scale(1.05);
+}
+
+.bg-profile {
+  background-image: url("src\assets\home\my-profile-banner.png");
+}
+.bg-project {
+  background-image: url("src\assets\home\my-projects-banner.png");
+}
+.bg-write-ups {
+  background-image: url("src\assets\home\my-writeups-banner.png");
+}
+
+.btn-p {
+  background-color: #222831;
+  color: #e3fdfd;
+}
+
+.btn-s {
+  background-color: #e3fdfd;
+  color: #222831;
+}
+
+.primary-text {
+  color: #e3fdfd;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}

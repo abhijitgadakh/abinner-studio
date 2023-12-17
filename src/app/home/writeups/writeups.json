@@ -1,0 +1,51 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "code": "english",
+      "name": "English"
+    },
+    {
+      "id": 2,
+      "code": "marathi",
+      "name": "Marathi"
+    },
+    {
+      "id": 3,
+      "code": "hindi",
+      "name": "Hindi"
+    },
+    {
+      "id": 4,
+      "code": "funny",
+      "name": "Funny"
+    },
+    {
+      "id": 5,
+      "code": "romantic",
+      "name": "Romantic"
+    },
+    {
+      "id": 6,
+      "code": "motivational",
+      "name": "Motivational"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "body": "Okay. I found love of my life and now all I want is find her location and put her in suitcase and take her home",
+      "categories": [1, 4]
+    },
+    {
+      "id": 2,
+      "body": "Last poem of night, and guess what, it still contains you\nYou that fills my mind and heart. Your smile is so bright that it lightens up my darkness\nThe way you look at me, makes me melt\nYou smell that hungers me today\nEven I know that you’ll never love me back. Yet the pain feels so good.",
+      "categories": [1, 5]
+    },
+    {
+      "id": 3,
+      "body": "गम को तुम कही छुपा के रखा करो, कोई और ढूंढ पाए या न पाए, अरजित सिंह जरूर ढूंढ लेगा",
+      "categories": [3, 4]
+    }
+  ]
+}

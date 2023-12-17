@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "code": "basic_apps",
+      "name": "Basic Apps"
+    },
+    {
+      "id": 2,
+      "code": "games",
+      "name": "Games"
+    },
+    {
+      "id": 3,
+      "code": "full_stack_apps",
+      "name": "Full Stack Apps"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "code": "guess-the-number",
+      "name": "Guess The Number",
+      "bannerImage": "/assets/project-banners/guess-the-number.png",
+      "description": "Number-guessing game where the player inputs guesses within a specified range.",
+      "routerLink": "/projects/guess-the-number",
+      "categoryId": 2
+    },
+    {
+      "id": 2,
+      "code": "weather-app",
+      "name": "Weather app",
+      "bannerImage": "/assets/project-banners/weather-app.png",
+      "description": "A user-friendly Weather App for real-time updates on weather of any cities.",
+      "routerLink": "/projects/weather-app",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "code": "avengers-expandable-cards",
+      "name": "The Avengers",
+      "bannerImage": "/assets/project-banners/avengers-expandable-cards.png",
+      "description": "App for Every an Avengers fan, featuring an image gallery with expandable panels.",
+      "routerLink": "/projects/avengers-expandable-cards",
+      "categoryId": 1
+    }
+  ]
+}

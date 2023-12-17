@@ -1,0 +1,14 @@
+<div *ngIf="selectedDetails.category_id == 1">
+  <app-academics [academicsData]="academicsData"></app-academics>
+</div>
+<div *ngIf="selectedDetails.category_id == 2">
+  <app-experience [experienceData]="experienceData"></app-experience>
+</div>
+<div *ngIf="selectedDetails.category_id == 3">
+  <app-achievement></app-achievement>
+</div>
+<div *ngIf="selectedDetails.category_id == 4">
+  <app-extracurricular
+    [extracurricularData]="extracurricularData"
+  ></app-extracurricular>
+</div>

@@ -1,0 +1,63 @@
+<div class="card project-list">
+  <div class="card-header project-list-header mb-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center">PROJECTS</div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex justify-content-end align-items-center">
+          Selected category:
+          {{
+            selectedCategory.id === undefined ? "All" : selectedCategory.name
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div
+      class="d-flex justify-content-end align-items-end"
+      *ngIf="projects.length !== projectsAll.length"
+    >
+      <button
+        type="button"
+        class="btn btn-sm btn-outline-light"
+        (click)="clearFilter()"
+      >
+        Reset Filter
+      </button>
+    </div>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-3" *ngFor="let project of projects">
+        <div class="card mb-4">
+          <img
+            [src]="project.bannerImage"
+            class="card-img-top"
+            alt="project-banner"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <a [routerLink]="project.routerLink" class="btn btn-dark"
+              >Play Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="d-flex justify-content-center align-items-center"
+        *ngIf="projects.length == 0"
+      >
+        <div class="card single-card w-50">
+          <div class="card-body">
+            <h4 class="text-center text-secondary quote-text">
+              <em>No Projects are available.</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

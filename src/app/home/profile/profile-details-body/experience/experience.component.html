@@ -1,0 +1,57 @@
+<div
+  class="btn-group"
+  role="group"
+  aria-label="Basic checkbox toggle button group"
+>
+  <div class="ms-2" *ngFor="let ced of experienceData.data.reverse()">
+    <input
+      type="checkbox"
+      class="btn-check"
+      [id]="'btncheck' + ced.id"
+      [checked]="isChecked(ced.id)"
+      (change)="onCheckboxChange(ced.id)"
+      autocomplete="off"
+    />
+    <label
+      class="btn btn-outline-dark btn-selected"
+      [for]="'btncheck' + ced.id"
+    >
+      {{ ced.name }}
+    </label>
+  </div>
+</div>
+
+<div class="acedemic-body" *ngIf="this.selectedCheckbox !== null">
+  <div class="alert mt-3" role="alert">
+    <h3 class="alert-heading">{{ currenrexperienceData.name }}</h3>
+    <p>
+      <strong>{{ currenrexperienceData.organization }}</strong>
+      <em class="ms-2">{{ currenrexperienceData.duration }}</em>
+    </p>
+    <hr />
+    <div class="description">
+      <p><strong>Description:</strong></p>
+      <p class="mb-0 ms-5">
+        {{ currenrexperienceData.description }}
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magnam
+        odio ab modi quasi facilis tempore inventore aperiam! Nostrum eveniet
+        asperiores dolores vel est architecto praesentium quasi non dicta nulla
+        assumenda, fugit sunt aperiam corrupti ea nihil illum alias accusantium
+        quod ducimus eum neque. Eveniet mollitia vel expedita quasi tempore a,
+        ad, dolores perspiciatis eaque sequi adipisci reprehenderit aut, odit
+        doloremque veniam voluptate vitae molestias neque nam accusantium. In,
+        corporis ullam earum odit perspiciatis quis hic? Eos sed reprehenderit
+        similique temporibus. Dolore cum excepturi et dolorem incidunt ad magni,
+        itaque illo, odit nulla ipsum asperiores expedita delectus alias ratione
+        nesciunt!
+      </p>
+    </div>
+
+    <div class="skills">
+      <hr />
+      <p>
+        <strong>Skills:</strong> {{ currenrexperienceData.skills.join(" | ") }}
+      </p>
+    </div>
+  </div>
+</div>

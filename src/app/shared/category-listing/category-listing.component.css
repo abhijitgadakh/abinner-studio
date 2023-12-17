@@ -1,0 +1,12 @@
+.category-head,
+.category-card {
+  background-color: #222831;
+  color: #e3fdfd;
+}
+
+.category-head {
+  min-height: 85vh;
+}
+.category-card {
+  cursor: pointer;
+}

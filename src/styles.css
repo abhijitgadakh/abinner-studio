@@ -1,0 +1,19 @@
+/* #222831
+#393E46
+#00ADB5
+#EEEEEE */
+
+/* #61A3BA
+#FFFFDD
+#D2DE32
+#A2C579 */
+
+.btn-p {
+  background-color: #222831;
+  color: #e3fdfd;
+}
+
+.btn-s {
+  background-color: #e3fdfd;
+  color: #222831;
+}

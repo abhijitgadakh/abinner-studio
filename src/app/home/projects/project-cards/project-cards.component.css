@@ -1,0 +1,16 @@
+.card.project-list {
+  background-color: #222831;
+  color: #e3fdfd;
+  height: 85vh;
+  min-width: 78vw;
+}
+
+.project-list-body {
+  width: 100%;
+  /* margin: 0 auto 0 auto; */
+}
+.project-card-body {
+  background-color: #e3fdfd;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}

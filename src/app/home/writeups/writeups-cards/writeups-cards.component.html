@@ -1,0 +1,56 @@
+<div class="card project-list">
+  <div class="card-header project-list-header mb-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center">Write Ups</div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex justify-content-end align-items-center">
+          Selected category:
+          {{
+            selectedCategory.id === undefined ? "All" : selectedCategory.name
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body overflow-y-scroll">
+    <div
+      class="d-flex justify-content-end align-items-end"
+      *ngIf="writeupsList.length !== writeupsListAll.length"
+    >
+      <button
+        type="button"
+        class="btn btn-sm btn-outline-light"
+        (click)="clearFilter()"
+      >
+        Reset Filter
+      </button>
+    </div>
+
+    <div class="" *ngIf="writeupsList.length > 0">
+      <div class="ms-5 me-5" *ngFor="let quote of writeupsList">
+        <div class="card mt-3 single-card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p class="quote-text">{{ quote.body }}</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-center align-items-center"
+      *ngIf="writeupsList.length == 0"
+    >
+      <div class="card single-card w-50">
+        <div class="card-body">
+          <h4 class="text-center text-secondary quote-text">
+            <em>No Quotes are available.</em>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

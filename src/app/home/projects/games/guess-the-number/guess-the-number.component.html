@@ -1,0 +1,57 @@
+<div class="gtn-game" [style.background-color]="backgroundColor">
+  <div class="container-fluid gtn-header pt-5">
+    <h1>Guess My Number!</h1>
+    <p class="between">(Between {{ minLimit }} and {{ maxLimit }})</p>
+    <button
+      class="btnq again"
+      [style]="{ 'background-color': buttonbgColor, color: buttonColor }"
+      (click)="resetGame()"
+    >
+      Again!
+    </button>
+    <div
+      class="number text-center"
+      [style]="{
+        'background-color': displayNumbgColor,
+        color: displayNumColor
+      }"
+    >
+      {{ displayNumber }}
+    </div>
+  </div>
+  <div class="container-fluid gtn-body">
+    <div class="row justify-content-around mt-5">
+      <div class="col-4 left d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <input
+            type="number"
+            class="guess"
+            #userInput
+            [(ngModel)]="inputValue"
+          />
+          <button
+            class="btnq check"
+            [ngClass]="{ btnDisabled: this.isDisabled }"
+            (click)="checkGuess(userInput.value)"
+            [disabled]="isDisabled"
+          >
+            Check!
+          </button>
+        </div>
+      </div>
+      <div class="col-4 right d-flex align-items-center mt-3 ms-5 ps-5">
+        <div class="text-start mt-5 info-div">
+          <p class="message ms-5">{{ message }}</p>
+          <div class="container-fluid ms-5">
+            <p class="label-score ms-5">
+              💯 Score: <span class="score">{{ CurrentScore }}</span>
+            </p>
+            <p class="label-highscore ms-5">
+              🥇 Highscore: <span class="highscore">{{ HighestScore }}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 mt-3 me-2">
+      <app-category-listing
+        [categories]="profileCategories"
+        (selectedCategory)="filterByCategory($event)"
+      ></app-category-listing>
+    </div>
+    <div class="col-lg-9 mt-3 ms-5">
+      <app-profile-details
+        [selectedCategory]="selectedCategory"
+        [profileData]="profileData"
+      ></app-profile-details>
+    </div>
+  </div>
+</div>

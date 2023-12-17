@@ -1,0 +1,58 @@
+<div
+  class="btn-group"
+  role="group"
+  aria-label="Basic checkbox toggle button group"
+>
+  <div class="ms-2" *ngFor="let cad of academicsData.data.reverse()">
+    <input
+      type="checkbox"
+      class="btn-check"
+      [id]="'btncheck' + cad.id"
+      [checked]="isChecked(cad.id)"
+      (change)="onCheckboxChange(cad.id)"
+      autocomplete="off"
+    />
+    <label
+      class="btn btn-outline-dark btn-selected"
+      [for]="'btncheck' + cad.id"
+    >
+      {{ cad.name }}
+    </label>
+  </div>
+</div>
+
+<div class="academic-body" *ngIf="this.selectedCheckbox !== null">
+  <div class="alert mt-3" role="alert">
+    <h3 class="alert-heading">{{ currenrAcademicsData.name }}</h3>
+    <p>
+      <strong
+        ><em>{{ currenrAcademicsData.university }}</em></strong
+      >
+    </p>
+    <hr />
+    <div class="description">
+      <p><strong>Description:</strong></p>
+      <p class="mb-0 ms-5">
+        {{ currenrAcademicsData.description }}
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magnam
+        odio ab modi quasi facilis tempore inventore aperiam! Nostrum eveniet
+        asperiores dolores vel est architecto praesentium quasi non dicta nulla
+        assumenda, fugit sunt aperiam corrupti ea nihil illum alias accusantium
+        quod ducimus eum neque. Eveniet mollitia vel expedita quasi tempore a,
+        ad, dolores perspiciatis eaque sequi adipisci reprehenderit aut, odit
+        doloremque veniam voluptate vitae molestias neque nam accusantium. In,
+        corporis ullam earum odit perspiciatis quis hic? Eos sed reprehenderit
+        similique temporibus. Dolore cum excepturi et dolorem incidunt ad magni,
+        itaque illo, odit nulla ipsum asperiores expedita delectus alias ratione
+        nesciunt!
+      </p>
+    </div>
+
+    <div class="skills">
+      <hr />
+      <p>
+        <strong>Skills:</strong> {{ currenrAcademicsData.skills.join(" | ") }}
+      </p>
+    </div>
+  </div>
+</div>

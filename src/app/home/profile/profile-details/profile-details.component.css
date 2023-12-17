@@ -1,0 +1,15 @@
+.profile-details {
+  /* background-color: #222831; */
+  background-color: #e3fdfd;
+  border: 3px solid #222831;
+  height: 85vh;
+  min-width: 78vw;
+}
+
+.profile-details-header {
+  background-color: #e3fdfd;
+  border-bottom: 2px solid #222831;
+  width: 100%;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,30 @@
+<div class="card project-list">
+  <div class="card-header project-list-header mb-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center">PROJECTS</div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex justify-content-end align-items-center">
+          Selected category: {{ selectedCategory.id === undefined ? "All" :
+          selectedCategory.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="" *ngIf="projects.length > 0">
+    <div class="card-body" *ngFor="let project of projects">
+      <div class="card project-card-body" style="width: 18rem">
+        <img [src]="project.bannerImage" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ project.name }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          <a [routerLink]="project.routerLink" class="btn btn-dark">Play Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="" *ngIf="projects.length == 0">
+    <div class="alert alert-secondary" role="alert">No Projects Available</div>
+  </div>
+</div>

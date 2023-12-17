@@ -1,0 +1,93 @@
+.app-body {
+  background-color: #222831;
+  background-image: url("../../../../../assets/project-images/basic-apps/expanding-cards/images/background.png");
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.help {
+  margin: 20px 0px 5px 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.box {
+  margin-top: 0;
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.2s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(6),
+  .panel:nth-of-type(7) {
+    display: none;
+  }
+}
+
+.header {
+  display: flex;
+}
+
+.header img {
+  height: 40px;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer p {
+  position: absolute;
+  font-size: large;
+  font-style: italic;
+  right: 25px;
+}

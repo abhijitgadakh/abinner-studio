@@ -1,0 +1,120 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "code": "academics",
+      "name": "Academics"
+    },
+    {
+      "id": 2,
+      "code": "experience",
+      "name": "Experiences"
+    },
+    {
+      "id": 3,
+      "code": "achievement",
+      "name": "Achievements"
+    },
+    {
+      "id": 4,
+      "code": "extracurricular_activities",
+      "name": "Extracurricular Activities"
+    }
+  ],
+  "academics": {
+    "category_id": 1,
+    "data": [
+      {
+        "id": 1,
+        "code": "scc",
+        "name": "Secondary School Certificate (10th)",
+        "university": "School: MMVM, Pune. (State board)",
+        "percentage": "83.82%",
+        "description": "N/A",
+        "field": "N/A",
+        "skills": ["Social Science", "Marathi", "Science", "Mathematics"]
+      },
+      {
+        "id": 2,
+        "code": "hsc",
+        "name": "Higher Secondary Certificate (12th)",
+        "percentage": "57.33%",
+        "university": "College: N. Wadia College, Pune. (State board)",
+        "description": "N/A",
+        "field": "Science",
+        "skills": ["Mathematics", "Physics", "Chemistry"]
+      },
+      {
+        "id": 3,
+        "code": "bachelorDegree",
+        "name": "Bachelor of Engineering(Mechanical)",
+        "percentage": "68.76%",
+        "university": "Pune University",
+        "description": "N/A",
+        "field": "Mechanical",
+        "skills": ["CAD/CAM", "CATIA", "C Programming Language"]
+      }
+    ]
+  },
+  "experience": {
+    "category_id": 2,
+    "data": [
+      {
+        "id": 1,
+        "code": "exp1",
+        "name": "Junior Design Engineer",
+        "organization": "Perfect Robotics",
+        "duration": "Aug-2018 - Mar-2020",
+        "description": "N/A",
+        "field": "Mechanical",
+        "skills": ["Solid Works", "Quality Analysis"]
+      },
+      {
+        "id": 2,
+        "code": "exp2",
+        "name": "Digital Marketing Executive",
+        "organization": "Radiant IT Services",
+        "duration": "May-2020 - dec-2021",
+        "description": "N/A",
+        "field": "IT",
+        "skills": ["Google ads", "PhotoShop", "Canva", "SMS/Email Marketing"]
+      },
+      {
+        "id": 3,
+        "code": "exp2",
+        "name": "Web Developer",
+        "organization": "Radiant IT Services",
+        "duration": "Jan-2022 - Mar-2023",
+        "description": "N/A",
+        "field": "IT",
+        "skills": ["HTML", "CSS", "JavaScript", "Core Java", "VS Code", "STS"]
+      },
+      {
+        "id": 4,
+        "code": "exp3",
+        "name": "Developer",
+        "organization": "PaExSkin Solutions",
+        "duration": "Apr-2023 - Present",
+        "description": "Collaboratively engineered custom learning app using open-source LMS framework, ensuring code quality and innovation. Proactively addressed functional issues, delivering efficient back-end processing, and implemented creative development approaches to achieve project goals.",
+        "field": "IT",
+        "skills": [
+          "Spring Boot",
+          "Hibernate",
+          "Angular JS",
+          "MySQL",
+          "Azure",
+          "POSTMAN",
+          "GitHub"
+        ]
+      }
+    ]
+  },
+  "achievement": {
+    "category_id": 3,
+    "data": []
+  },
+  "extracurricular_activities": {
+    "category_id": 4,
+    "data": []
+  }
+}

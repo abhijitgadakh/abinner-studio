@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 mt-3 me-2">
+      <app-category-listing
+        [categories]="projectCategories"
+        (selectedCategory)="filterByCategory($event)"
+      ></app-category-listing>
+    </div>
+    <div class="col-lg-9 mt-3 ms-5">
+      <app-project-cards
+        [projects]="projectList"
+        [projectsAll]="projectListAll"
+        [selectedCategory]="selectedCategory"
+      ></app-project-cards>
+    </div>
+  </div>
+</div>
