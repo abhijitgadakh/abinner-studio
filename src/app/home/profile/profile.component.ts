@@ -13,12 +13,12 @@ export class ProfileComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.profileData.academics.data.sort(function (a, b) {
-      return b.id - a.id;
-    });
-    this.profileData.experience.data.sort(function (a, b) {
-      return b.id - a.id;
-    });
+    // this.profileData.academics.data.sort(function (a, b) {
+    //   return b.id - a.id;
+    // });
+    // this.profileData.experience.data.sort(function (a, b) {
+    //   return b.id - a.id;
+    // });
     // this.profileData.achievement.data.sort(function (a, b) {
     //   return a.id - b.id;
     // });
