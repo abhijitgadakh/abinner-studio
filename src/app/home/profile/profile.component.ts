@@ -12,7 +12,20 @@ export class ProfileComponent implements OnInit {
   public selectedCategory: any = {};
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.profileData.academics.data.sort(function (a, b) {
+      return b.id - a.id;
+    });
+    this.profileData.experience.data.sort(function (a, b) {
+      return b.id - a.id;
+    });
+    // this.profileData.achievement.data.sort(function (a, b) {
+    //   return a.id - b.id;
+    // });
+    // this.profileData.extracurricular_activities.data.sort(function (a, b) {
+    //   return a.id - b.id;
+    // });
+  }
 
   filterByCategory(category: any) {
     this.selectedCategory = category;
