@@ -44,13 +44,13 @@ export class PigGameComponent implements OnInit {
       if (dice !== 1) {
         if (this.activePlayer == 1) {
           this.player1CScore += dice;
-          if (this.player1Score + this.player1CScore >= 10) {
+          if (this.player1Score + this.player1CScore >= 100) {
             this.setWinner(1);
             return;
           }
         } else {
           this.player2CScore += dice;
-          if (this.player2Score + this.player2CScore >= 10) {
+          if (this.player2Score + this.player2CScore >= 100) {
             this.setWinner(2);
             return;
           }
