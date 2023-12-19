@@ -1,0 +1,46 @@
+<div class="card app-body main-box">
+  <!-- <h3>Active Player is {{ activePlayer }}</h3> -->
+  <main>
+    <section
+      class="player"
+      [ngClass]="{
+        'player--active': activePlayer == 1,
+        'player--winner': winner == 1
+      }"
+    >
+      <h2 class="name">Player 1</h2>
+      <p class="score">{{ player1Score }}</p>
+      <div class="current" *ngIf="winner != 1">
+        <p class="current-label">Current</p>
+        <p class="current-score">{{ player1CScore }}</p>
+      </div>
+      <h1 class="name" *ngIf="winner == 1">WINNER</h1>
+    </section>
+    <section
+      class="player"
+      [ngClass]="{
+        'player--active': activePlayer == 2,
+        'player--winner': winner == 2
+      }"
+    >
+      <h2 class="name">Player 2</h2>
+      <p class="score">{{ player2Score }}</p>
+      <div class="current" *ngIf="winner != 2">
+        <p class="current-label">Current</p>
+        <p class="current-score">{{ player2CScore }}</p>
+      </div>
+      <h1 class="name" *ngIf="winner == 2">WINNER</h1>
+    </section>
+
+    <span *ngIf="showDice">
+      <img [src]="dice" alt="Playing dice" class="dice" />
+    </span>
+    <button class="pg-btn pg-btn--new" (click)="resetGame()">
+      🔄 NEW GAME
+    </button>
+    <button class="pg-btn pg-btn--roll" (click)="diceRolled()">
+      🎲 Roll dice
+    </button>
+    <button class="pg-btn pg-btn--hold" (click)="holdPlayer()">📥 Hold</button>
+  </main>
+</div>

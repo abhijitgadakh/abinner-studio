@@ -23,6 +23,8 @@ import { AchievementComponent } from './home/profile/profile-details-body/achiev
 import { WriteupsCardsComponent } from './home/writeups/writeups-cards/writeups-cards.component';
 import { WeatherAppComponent } from './home/projects/basic-apps/weather-app/weather-app.component';
 import { AvengersExpandableCardsComponent } from './home/projects/basic-apps/avengers-expandable-cards/avengers-expandable-cards.component';
+import { PigGameComponent } from './home/projects/games/pig-game/pig-game.component';
+import { ModalWindowsComponent } from './home/projects/basic-apps/modal-windows/modal-windows.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { AvengersExpandableCardsComponent } from './home/projects/basic-apps/ave
     WriteupsCardsComponent,
     WeatherAppComponent,
     AvengersExpandableCardsComponent,
+    PigGameComponent,
+    ModalWindowsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

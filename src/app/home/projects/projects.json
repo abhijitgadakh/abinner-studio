@@ -36,12 +36,30 @@
       "categoryId": 1
     },
     {
-      "id": 2,
+      "id": 3,
       "code": "avengers-expandable-cards",
       "name": "The Avengers",
       "bannerImage": "/assets/project-banners/avengers-expandable-cards.png",
       "description": "App for Every an Avengers fan, featuring an image gallery with expandable panels.",
       "routerLink": "/projects/avengers-expandable-cards",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "code": "pig-game",
+      "name": "Pig Game",
+      "bannerImage": "/assets/project-banners/pig-game.png",
+      "description": "Number-guessing game where the player inputs guesses within a specified range.",
+      "routerLink": "/projects/pig-game",
+      "categoryId": 2
+    },
+    {
+      "id": 5,
+      "code": "modal-window",
+      "name": "Modal Window",
+      "bannerImage": "/assets/project-banners/modal-window.png",
+      "description": "A simple Webpage with a modal window feature activated by buttons.",
+      "routerLink": "/projects/modal-window",
       "categoryId": 1
     }
   ]

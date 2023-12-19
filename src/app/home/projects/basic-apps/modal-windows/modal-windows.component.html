@@ -1,0 +1,14 @@
+<div class="container-fluid main-body">
+  <button class="show-modal" (click)="openModal()">Click to see Modal</button>
+
+  <div class="modal-window" [ngClass]="{ hidden: !modalView }">
+    <button class="close-modal" (click)="closeModal()">&times;</button>
+    <h1>Welcome to our Website!</h1>
+    <p>
+      Explore the exciting features and discover a world of possibilities. Our
+      mission is to provide you with a seamless and enjoyable experience. Feel
+      free to navigate through the pages and make the most of your visit.
+    </p>
+  </div>
+  <div class="overlay" [ngClass]="{ hidden: !modalView }"></div>
+</div>
