@@ -39,9 +39,10 @@
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p>
-            <a [routerLink]="project.routerLink" class="btn btn-dark"
-              >Play Now</a
-            >
+            <a [routerLink]="project.routerLink" class="btn btn-dark">
+              <span *ngIf="project.categoryId == 2">Play Now</span>
+              <span *ngIf="project.categoryId != 2">Open Now</span>
+            </a>
           </div>
         </div>
       </div>
