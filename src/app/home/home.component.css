@@ -6,7 +6,9 @@
 
 .home-content {
   height: 100%;
+  width: 80%;
   margin-top: 8%;
+  margin: 0 auto;
 }
 
 .bg-home {
@@ -20,13 +22,13 @@
 }
 
 .bg-profile {
-  background-image: url("src\assets\home\my-profile-banner.png");
+  background-image: url("src/assets/home/my-profile-banner.png");
 }
 .bg-project {
-  background-image: url("src\assets\home\my-projects-banner.png");
+  background-image: url("src/assets/home/my-projects-banner.png");
 }
 .bg-write-ups {
-  background-image: url("src\assets\home\my-writeups-banner.png");
+  background-image: url("src/assets/home/my-writeups-banner.png");
 }
 
 .btn-p {
