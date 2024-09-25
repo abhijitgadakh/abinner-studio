@@ -9,16 +9,6 @@
       "id": 2,
       "code": "experience",
       "name": "Experiences"
-    },
-    {
-      "id": 3,
-      "code": "achievement",
-      "name": "Achievements"
-    },
-    {
-      "id": 4,
-      "code": "extracurricular_activities",
-      "name": "Extracurricular Activities"
     }
   ],
   "academics": {
@@ -30,7 +20,7 @@
         "name": "Secondary School Certificate (10th)",
         "university": "School: MMVM, Pune. (State board)",
         "percentage": "83.82%",
-        "description": "N/A",
+        "description": "I completed my 10th standard with a focus on core subjects, which laid the groundwork for my future academic and extracurricular interests.",
         "field": "N/A",
         "skills": ["Social Science", "Marathi", "Science", "Mathematics"]
       },
@@ -40,7 +30,7 @@
         "name": "Higher Secondary Certificate (12th)",
         "percentage": "57.33%",
         "university": "College: N. Wadia College, Pune. (State board)",
-        "description": "N/A",
+        "description": "I completed my 12th standard in the Science stream, gaining a strong foundation in Physics, Chemistry, and Mathematics, while also developing a passion for cricket.",
         "field": "Science",
         "skills": ["Mathematics", "Physics", "Chemistry"]
       },
@@ -50,7 +40,7 @@
         "name": "Bachelor of Engineering(Mechanical)",
         "percentage": "68.76%",
         "university": "Pune University",
-        "description": "N/A",
+        "description": "I hold a Bachelor of Engineering in Mechanical Engineering, where I not only gained expertise in subjects related to mechanical engineering but also developed proficiency in C language through interactions with my computer science peers and teachers. Additionally, I acquired hands-on experience with industry-standard tools such as CATIA V5, AutoCAD, and SolidWorks.",
         "field": "Mechanical",
         "skills": ["CAD/CAM", "CATIA", "C Programming Language"]
       }
@@ -108,13 +98,5 @@
         ]
       }
     ]
-  },
-  "achievement": {
-    "category_id": 3,
-    "data": []
-  },
-  "extracurricular_activities": {
-    "category_id": 4,
-    "data": []
   }
 }

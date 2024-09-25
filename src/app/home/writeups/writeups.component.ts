@@ -16,8 +16,8 @@ export class WriteupsComponent implements OnInit {
   ngOnInit(): void {}
   filterByCategory(category: any) {
     this.selectedCategory = category;
-    this.writeupsList = writeupsList.quotes.filter((quote) =>
-      quote.categories.includes(category.id)
-    );
+    // this.writeupsList = writeupsList.quotes.filter((quote) =>
+    //   quote.categories.includes(category.id)
+    // );
   }
 }
